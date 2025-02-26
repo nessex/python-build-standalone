@@ -59,6 +59,24 @@ linux:
           - freethreaded+lto
         minimum-python-version: "3.13"
 
+  aarch64-neoversev2-linux-gnu:
+    arch: aarch64
+    libc: gnu
+    python_versions:
+      - "3.12"
+      - "3.13"
+      - "3.14"
+    build_options:
+      - debug
+      - noopt
+      - lto
+    build_options_conditional:
+      - options:
+          - freethreaded+debug
+          - freethreaded+noopt
+          - freethreaded+lto
+        minimum-python-version: "3.13"
+
   armv7-unknown-linux-gnueabi:
     arch: armv7
     libc: gnu

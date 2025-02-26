@@ -185,6 +185,45 @@ aarch64-unknown-linux-gnu:
     - zlib
   openssl_target: linux-aarch64
 
+aarch64-neoversev2-linux-gnu:
+  host_platforms:
+    - linux64
+  pythons_supported:
+    - '3.12'
+    - '3.13'
+    - '3.14'
+  docker_image_suffix: .cross
+  host_cc: /usr/bin/x86_64-linux-gnu-gcc
+  host_cxx: /usr/bin/x86_64-linux-gnu-g++
+  target_cc: /usr/bin/aarch64-linux-gnu-gcc
+  target_cflags:
+    - '-mcpu=neoverse-512tvb'
+  needs:
+    - autoconf
+    - bdb
+    - binutils
+    - bzip2
+    - expat
+    - libedit
+    - libffi
+    - libX11
+    - libXau
+    - libxcb
+    - m4
+    - mpdecimal
+    - ncurses
+    - openssl-3.0
+    - patchelf
+    - sqlite
+    - tcl
+    - tk
+    - tix
+    - uuid
+    - xorgproto
+    - xz
+    - zlib
+  openssl_target: linux-aarch64
+
 arm64-apple-tvos:
   host_platforms:
     - macos

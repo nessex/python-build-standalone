@@ -890,7 +890,7 @@ touch "${LIB_DYNLOAD}/.empty"
 
 # Symlink libpython so we don't have 2 copies.
 case "${TARGET_TRIPLE}" in
-aarch64-unknown-linux-gnu)
+aarch64-unknown-linux-gnu|aarch64-neoversev2-linux-gnu)
     PYTHON_ARCH="aarch64-linux-gnu"
     ;;
 # This is too aggressive. But we don't have patches in place for
