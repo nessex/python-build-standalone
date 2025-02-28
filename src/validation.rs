@@ -34,6 +34,7 @@ const RECOGNIZED_TRIPLES: &[&str] = &[
     "aarch64-apple-darwin",
     "aarch64-apple-ios",
     "aarch64-unknown-linux-gnu",
+    "aarch64-neoverse2-linux-gnu",
     "armv7-unknown-linux-gnueabi",
     "armv7-unknown-linux-gnueabihf",
     "arm64-apple-tvos",

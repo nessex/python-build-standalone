@@ -1,5 +1,5 @@
 {% include 'base.Dockerfile' %}
-RUN apt-get install \
+RUN apt-get install -y \
     ca-certificates \
     curl \
     libc6-dev \

@@ -10,11 +10,10 @@
 # Compression packages are needed to extract archives.
 #
 # Various other build tools are needed for various building.
-RUN ulimit -n 10000 && apt-get install \
+RUN ulimit -n 10000 && apt-get install -y \
     bzip2 \
     file \
     libc6-dev \
-    libc6-dev:i386 \
     libffi-dev \
     make \
     patch \

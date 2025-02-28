@@ -185,7 +185,7 @@ aarch64-unknown-linux-gnu:
     - zlib
   openssl_target: linux-aarch64
 
-aarch64-neoversev2-linux-gnu:
+aarch64-neoverse2-linux-gnu:
   host_platforms:
     - linux64
   pythons_supported:
@@ -193,10 +193,12 @@ aarch64-neoversev2-linux-gnu:
     - '3.13'
     - '3.14'
   docker_image_suffix: .cross
-  host_cc: /usr/bin/x86_64-linux-gnu-gcc
-  host_cxx: /usr/bin/x86_64-linux-gnu-g++
+  host_cc: /usr/bin/aarch64-linux-gnu-gcc
+  host_cxx: /usr/bin/aarch64-linux-gnu-g++
   target_cc: /usr/bin/aarch64-linux-gnu-gcc
   target_cflags:
+    - '-mcpu=neoverse-512tvb'
+  target_ldflags:
     - '-mcpu=neoverse-512tvb'
   needs:
     - autoconf

@@ -1,3 +1,3 @@
 {% include 'build.Dockerfile' %}
-RUN ulimit -n 10000 && apt-get install \
+RUN ulimit -n 10000 && apt-get install -y \
     python
