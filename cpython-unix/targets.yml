@@ -198,8 +198,10 @@ aarch64-neoverse2-linux-gnu:
   target_cc: /usr/bin/aarch64-linux-gnu-gcc
   target_cflags:
     - '-mcpu=neoverse-v2'
+    - '-moutline-atomics'
   target_ldflags:
     - '-mcpu=neoverse-v2'
+    - '-moutline-atomics'
   needs:
     - autoconf
     - bdb
