@@ -161,9 +161,13 @@ aarch64-unknown-linux-gnu:
   target_cflags:
     - '-mcpu=neoverse-v2'
     - '-moutline-atomics'
+    - '-static'
+    - '-static-libgcc'
   target_ldflags:
     - '-mcpu=neoverse-v2'
     - '-moutline-atomics'
+    - '-static'
+    - '-static-libgcc'
   needs:
     - autoconf
     - bdb
