@@ -50,7 +50,7 @@ def main():
     parser.add_argument(
         "--target-triple",
         default=default_target_triple,
-        choices=["aarch64-neoverse2-linux-gnu"],
+        choices=["aarch64-unknown-linux-gnu"],
         help="Target host triple to build for",
     )
 
