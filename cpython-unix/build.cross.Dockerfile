@@ -1,5 +1,5 @@
 # Debian Stretch.
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 MAINTAINER Gregory Szorc <gregory.szorc@gmail.com>
 
 RUN groupadd -g 2000 build && \
