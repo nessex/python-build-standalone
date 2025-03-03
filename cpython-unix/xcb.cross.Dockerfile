@@ -1,3 +1,3 @@
 {% include 'build.cross.Dockerfile' %}
 RUN apt-get install -y \
-    python
+    python3

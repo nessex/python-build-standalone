@@ -59,7 +59,7 @@ linux:
           - freethreaded+lto
         minimum-python-version: "3.13"
 
-  aarch64-neoversev2-linux-gnu:
+  aarch64-neoverse2-linux-gnu:
     arch: aarch64
     libc: gnu
     python_versions:
