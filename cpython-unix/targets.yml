@@ -197,9 +197,9 @@ aarch64-neoverse2-linux-gnu:
   host_cxx: /usr/bin/aarch64-linux-gnu-g++
   target_cc: /usr/bin/aarch64-linux-gnu-gcc
   target_cflags:
-    - '-mcpu=neoverse-512tvb'
+    - '-mcpu=neoverse-v2'
   target_ldflags:
-    - '-mcpu=neoverse-512tvb'
+    - '-mcpu=neoverse-v2'
   needs:
     - autoconf
     - bdb

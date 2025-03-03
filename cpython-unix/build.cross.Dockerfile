@@ -1,5 +1,5 @@
 # Debian Stretch.
-FROM python:3.12.9-slim-bullseye
+FROM ubuntu:24.04
 MAINTAINER Gregory Szorc <gregory.szorc@gmail.com>
 
 RUN groupadd -g 1000 build && \
