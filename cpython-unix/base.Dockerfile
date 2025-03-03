@@ -2,8 +2,8 @@
 FROM ubuntu:24.04
 MAINTAINER Gregory Szorc <gregory.szorc@gmail.com>
 
-RUN groupadd -g 1000 build && \
-    useradd -u 1000 -g 1000 -d /build -s /bin/bash -m build && \
+RUN groupadd -g 2000 build && \
+    useradd -u 2000 -g 2000 -d /build -s /bin/bash -m build && \
     mkdir /tools && \
     chown -R build:build /build /tools
 
