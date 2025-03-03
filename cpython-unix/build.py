@@ -114,7 +114,7 @@ def add_target_env(env, build_platform, target_triple, build_env):
     extra_host_ldflags = []
 
     if build_platform == "linux64":
-        env["BUILD_TRIPLE"] = "x86_64-unknown-linux-gnu"
+        env["BUILD_TRIPLE"] = "aarch64-unknown-linux-gnu"
 
         env["TARGET_TRIPLE"] = (
             target_triple.replace("x86_64_v2-", "x86_64-")

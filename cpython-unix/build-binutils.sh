@@ -24,7 +24,7 @@ fi
 
 # gprofng requires a bison newer than what we have. So just disable it.
 ../binutils-${BINUTILS_VERSION}/configure \
-    --build=x86_64-unknown-linux-gnu \
+    --build=aarch64-unknown-linux-gnu \
     --prefix=/tools/host \
     --enable-plugins \
     --enable-gprofng=no \

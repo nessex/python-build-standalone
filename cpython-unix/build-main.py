@@ -30,7 +30,7 @@ TARGETS_CONFIG = SUPPORT / "targets.yml"
 def main():
     if sys.platform == "linux":
         host_platform = "linux64"
-        default_target_triple = "x86_64-unknown-linux-gnu"
+        default_target_triple = "aarch64-unknown-linux-gnu"
     elif sys.platform == "darwin":
         host_platform = "macos"
         machine = platform.machine()
