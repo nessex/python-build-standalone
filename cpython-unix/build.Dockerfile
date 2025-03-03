@@ -11,6 +11,7 @@
 #
 # Various other build tools are needed for various building.
 RUN ulimit -n 10000 && apt-get install -y \
+    build-essential \
     bzip2 \
     file \
     libc6-dev \

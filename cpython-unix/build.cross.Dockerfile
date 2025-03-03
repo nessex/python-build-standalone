@@ -21,6 +21,7 @@ RUN apt-get update
 
 # Host building.
 RUN apt-get install -y \
+    build-essential \
     bzip2 \
     gcc \
     g++ \
