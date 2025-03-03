@@ -155,10 +155,15 @@ aarch64-unknown-linux-gnu:
     - '3.12'
     - '3.13'
     - '3.14'
-  docker_image_suffix: .cross
-  host_cc: /usr/bin/x86_64-linux-gnu-gcc
-  host_cxx: /usr/bin/x86_64-linux-gnu-g++
+  host_cc: /usr/bin/aarch64-linux-gnu-gcc
+  host_cxx: /usr/bin/aarch64-linux-gnu-g++
   target_cc: /usr/bin/aarch64-linux-gnu-gcc
+  target_cflags:
+    - '-mcpu=neoverse-v2'
+    - '-moutline-atomics'
+  target_ldflags:
+    - '-mcpu=neoverse-v2'
+    - '-moutline-atomics'
   needs:
     - autoconf
     - bdb
